@@ -1,0 +1,49 @@
+﻿@model IEnumerable<WebsiteLicenta.Models.LeaderboardItem>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap">
+<link rel="stylesheet" href="~/css/leaderboard.css" asp-append-version="true" />
+
+<div class="leaderboard-container">
+    <div class="scrollable">
+        <table class="table">
+            <thead class="sticky">
+                <tr>
+                    <th>
+                        #
+                    </th>
+                    <th>
+                        Username
+                    </th>
+                    <th>
+                        Score
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int counter = 0;
+                }
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @(counter + 1)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.username)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.score)
+                        </td>
+                    </tr>
+                    counter++;
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

@@ -1,0 +1,234 @@
+﻿body {
+    color: #fff !important;
+    font-family: 'Orbitron', sans-serif !important;
+}
+
+h1, h2, h3 {
+    color: #FFD700;
+}
+
+hr {
+    border-top: 1px solid #FFD700;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2vh;
+}
+
+.col-md-4, .col-md-6 {
+    margin: 2vh;
+    max-width: 90vw;
+}
+
+form {
+    background: rgba(31, 41, 55, 0.7);
+    backdrop-filter: blur(10px);
+    border: 3px solid #00FF00;
+    box-shadow: 0px 0px 1vh #00FF00;
+    border-radius: 2vh;
+    padding: 2vh;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.form-inline {
+    background: transparent !important;
+    backdrop-filter: none;
+    border: none;
+    box-shadow: none;
+    border-radius: unset;
+    padding: 0;
+    font-weight: bold !important;
+}
+
+.form-control {
+    border: 0.2em solid #FFD700;
+    background: transparent;
+    color: #FFD700;
+    transition: border 0.3s ease;
+    margin-bottom: 2vh;
+}
+
+    .form-control:focus {
+        background: transparent;
+        outline: none !important;
+        border-color: #00FF00;
+        box-shadow: 0 0 0 0.2em rgba(0, 255, 0, 0.5) !important;
+    }
+
+.text-danger.field-validation-error span {
+    color: #FF0000;
+    font-size: 0.8em; /* Smaller text size for validation errors */
+}
+
+label {
+    color: #FFD700;
+}
+
+.text-danger {
+    color: #FF0000;
+}
+
+
+.section {
+    padding: 2vh;
+    background: rgba(31, 41, 55, 0.7);
+    backdrop-filter: blur(10px);
+    border: 3px solid #00FF00;
+    box-shadow: 0px 0px 1vh #00FF00;
+    border-radius: 2vh;
+}
+
+    .section a {
+        color: #FFD700;
+        transition: color 0.3s ease;
+    }
+
+        .section a:hover {
+            color: #00FF00;
+        }
+
+#login-submit {
+    background: #253947;
+    color: #FFD700;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    transition: all .4s ease;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    align-self: center;
+    width: 100%;
+    height: 7vh;
+}
+
+    #login-submit:hover {
+        background-color: #253947;
+        box-shadow: 0px 0px 10px #00FF00;
+        animation: pulse 1s infinite;
+    }
+
+#forgot-password, #resend-confirmation, #register-user {
+    color: #00FF00 !important;
+}
+
+.checkbox {
+    margin-left: 1.5em;
+}
+
+/* Custom Checkbox */
+.form-check-input {
+    width: 1em;
+    height: 1em;
+    background-color: transparent; /* Transparent Background */
+    border-radius: 50%; /* Rounded Edges */
+    border: 2px solid #FFD700; /* Border Color */
+    transition: 0.5s; /* Smooth Transition */
+}
+
+    /* Custom Checkbox Checked State */
+    .form-check-input:checked {
+        background-color: #00FF00; /* Green Background When Checked */
+        border: 2px solid #00FF00; /* Green Border When Checked */
+        box-shadow: 0 0 0 10px #253947; /* Shadow Color */
+    }
+
+    /* Custom Checkbox Hover State */
+    .form-check-input:hover {
+        border: 2px solid #00FF00; /* Green Border On Hover */
+    }
+
+    /* Custom Checkbox Focus State */
+    .form-check-input:focus {
+        outline: none !important; /* Remove Default Outline */
+        box-shadow: 0 0 0 0.2em rgba(0, 255, 0, 0.5) !important; /* Add Custom Outline */
+    }
+
+
+p {
+    margin: 1.5vh;
+}
+
+.w-100.btn.btn-lg.btn-primary {
+    background: #253947;
+    color: #FFD700;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    transition: all .4s ease;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    align-self: center;
+    width: 100%;
+    height: 7vh;
+}
+
+    .w-100.btn.btn-lg.btn-primary:hover {
+        background-color: #253947;
+        box-shadow: 0px 0px 10px #00FF00;
+        animation: pulse 1s infinite;
+    }
+
+
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 5px #00FF00;
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 20px #00ff00, 0 0 30px #00FF00;
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 5px #00FF00;
+    }
+}
+
+.form-control:disabled {
+    background: transparent !important;
+}
+
+/* Style for the checkmark span */
+.h-100.input-group-text.text-success.font-weight-bold {
+    color: #FFD700; /* Similar to your h1, h2, h3 color */
+    background-color: rgba(31, 41, 55, 0.7); /* Same as your form background-color */
+    border: 0.2em solid #FFD700; /* Similar to your .form-control border style */
+}
+
+/* Style for the navigation links */
+.nav-pills .nav-link {
+    color: #FFD700; /* Same as your other link colors */
+    background-color: rgba(31, 41, 55, 0.7); /* Same as your form background-color */
+    border-radius: 2vh; /* Same as your form border-radius */
+    margin-top: 2vh;
+}
+
+    .nav-pills .nav-link.active {
+        color: #00FF00; /* Using your "hover" color for the active link */
+        background-color: rgba(31, 41, 55, 0.7); /* Same as your form background-color */
+        border-radius: 2vh; /* Same as your form border-radius */
+        box-shadow: 0px 0px 1vh #00FF00; /* Similar to your form box-shadow */
+    }
+
+/* Style for the submit button */
+.btn.btn-primary {
+    background: #253947; /* Same as your button background color */
+    color: #FFD700; /* Same as your button text color */
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    transition: all .4s ease;
+    cursor: pointer;
+    padding: 1vh 2vh;
+}
+
+    .btn.btn-primary:hover {
+        background-color: #253947;
+        box-shadow: 0px 0px 10px #00FF00;
+        animation: pulse 1s infinite;
+    }

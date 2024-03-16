@@ -1,0 +1,39 @@
+﻿#unity-container {
+    margin-top: 3.5vh;
+    background: rgba(31, 41, 55, 0.7); /* Same as your form background-color */
+    border: 3px solid #00FF00; /* Same as your form border */
+    box-shadow: 0px 0px 1vh #00FF00; /* Same as your form box-shadow */
+    border-radius: 2vh; /* Same as your form border-radius */
+}
+
+#unity-canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - var(--header-height));
+    border-radius: 2vh; /* Same as your form border-radius */
+}
+
+#unity-build-title {
+    color: #FFD700 !important;
+    font-family: 'Orbitron', sans-serif; /* Included from Google Fonts */
+    text-shadow: 2px 2px 4px #000000; /* Adds a shadow to make the text stand out more */
+}
+
+#unity-fullscreen-button {
+    background-color: none !important;
+    color: #FFD700; /* Same as your button text color */
+    cursor: pointer;
+    padding: 1vh;
+    border-radius: 1vh; /* Same as your form border-radius */
+    width: 4vh;
+    height: 4vh;
+}
+
+#unity-footer {
+    background-color: rgba(31, 41, 55, 1);
+    margin-bottom: 5.5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    margin-top: 0.5vh;
+}

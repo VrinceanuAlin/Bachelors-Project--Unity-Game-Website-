@@ -1,0 +1,69 @@
+﻿body {
+    color: #fff !important;
+    font-family: 'Orbitron', sans-serif !important;
+}
+
+.container {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 10px;
+    background: rgba(31, 41, 55, 0.7);
+    backdrop-filter: blur(10px); /* Apply blur to the background elements */
+    border: 3px solid #00FF00; /* Neon Green border */
+    box-shadow: 0px 0px 10px #00FF00; /* Neon green glow around the frame */
+    border-radius: 20px; /* Rounded corners */
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+h1, h2, h3 {
+    color: #FFD700;
+}
+
+h2 {
+    margin-top: 3vh;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 2em;
+}
+
+    ul li {
+        line-height: 2em;
+    }
+
+.container a {
+    color: #FFD700;
+    transition: color 0.3s ease;
+}
+
+    .container a:hover {
+        color: #00FF00;
+    }
+
+hr {
+    border-top: 1px solid #FFD700;
+}
+
+.container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #CBD2D9;
+    border-radius: 5px;
+}
+
+    .container::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+.container::-webkit-scrollbar-track {
+    background: #000;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px grey; /* Optional: Adds a little depth */
+    width: 10px; /* Aligns track with the scrollbar width */
+}

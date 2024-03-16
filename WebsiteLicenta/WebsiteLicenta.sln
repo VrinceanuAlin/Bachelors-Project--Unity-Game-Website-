@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebsiteLicenta", "WebsiteLicenta\WebsiteLicenta.csproj", "{5EF43FC5-6E42-4968-82C3-1DCD1349FF6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EF43FC5-6E42-4968-82C3-1DCD1349FF6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EF43FC5-6E42-4968-82C3-1DCD1349FF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EF43FC5-6E42-4968-82C3-1DCD1349FF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EF43FC5-6E42-4968-82C3-1DCD1349FF6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C583519-FF5D-4F8C-A1A7-013D43212BA9}
+	EndGlobalSection
+EndGlobal

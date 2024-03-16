@@ -1,0 +1,117 @@
+﻿body {
+    color: #fff !important;
+    font-family: 'Orbitron', sans-serif !important;
+}
+
+h1, h2, h3 {
+    color: #FFD700;
+}
+
+hr {
+    border-top: 1px solid #FFD700;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This will align items vertically in the center */
+    flex-wrap: wrap; /* To make sure the columns stack on smaller screens */
+    padding: 2vh; /* Padding to prevent content from touching the edge of the viewport */
+}
+
+.col-md-4, .col-md-6 {
+    margin: 1vh;
+    max-width: 95vw; /* Max width to keep some space on the sides on smaller screens */
+}
+
+form {
+    background: rgba(31, 41, 55, 0.7);
+    backdrop-filter: blur(10px);
+    border: 3px solid #00FF00;
+    box-shadow: 0px 0px 1vh #00FF00;
+    border-radius: 2vh;
+    padding: 2vh;
+    overflow-y: auto; /* To add scroll if content overflows */
+    max-height: 80vh; /* Max height to prevent overflowing the viewport */
+}
+
+.form-control {
+    border: 0.2em solid #FFD700;
+    background: transparent;
+    color: #FFD700;
+    transition: border 0.3s ease;
+    margin-bottom: 2vh;
+}
+
+    .form-control:focus {
+        background: transparent;
+        outline: none !important;
+        border-color: #00FF00;
+        box-shadow: 0 0 0 0.2em rgba(0, 255, 0, 0.5) !important;
+    }
+
+.text-danger.field-validation-error span {
+    color: #FF0000;
+    font-size: 0.8em; /* Smaller text size for validation errors */
+}
+
+label {
+    color: #FFD700;
+}
+
+.text-danger {
+    color: #FF0000;
+}
+
+.section {
+    padding: 2vh;
+    background: rgba(31, 41, 55, 0.7);
+    backdrop-filter: blur(10px);
+    border: 3px solid #00FF00;
+    box-shadow: 0px 0px 1vh #00FF00;
+    border-radius: 2vh;
+}
+
+    .section a {
+        color: #FFD700;
+        transition: color 0.3s ease;
+    }
+
+        .section a:hover {
+            color: #00FF00;
+        }
+
+#registerSubmit {
+    background: #253947;
+    color: #FFD700;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    transition: all .4s ease;
+    cursor: pointer;
+    padding: 1vh 2vh;
+    align-self: center;
+    width: 100%;
+    height: 7vh;
+}
+
+    #registerSubmit:hover {
+        background-color: #253947;
+        box-shadow: 0px 0px 10px #00FF00;
+        animation: pulse 1s infinite;
+    }
+
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 5px #00FF00;
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 20px #00ff00, 0 0 30px #00FF00;
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 5px #00FF00;
+    }
+}

@@ -1,0 +1,278 @@
+﻿body {
+    color: #fff !important;
+    font-family: 'Orbitron', sans-serif !important;
+}
+
+.containerCarousel {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    margin-top: 4vh;
+    max-width: 100%;
+    position: relative;
+    background: rgba(31, 41, 55, 0.7); /* Semi-transparent gold background */
+    backdrop-filter: blur(10px); /* Apply blur to the background elements */
+    border: 3px solid #00FF00; /* Neon Green border */
+    box-shadow: 0px 0px 10px #00FF00; /* Neon green glow around the frame */
+    border-radius: 20px; /* Rounded corners */
+}
+
+.carousel-item {
+    height: 73vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-inner > .carousel-item > h1, .carousel-inner > .carousel-item > h2, .carousel-inner > .carousel-item > p {
+    color: #FFD700;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.carousel-inner > .carousel-item > h1 {
+    font-size: 3em;
+}
+
+.carousel-inner > .carousel-item > h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-top: 3vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    background: none;
+    position: absolute;
+}
+
+.carousel-control-prev {
+    left: -9.5vw;
+    align-self: center;
+}
+
+.carousel-control-next {
+    right: -9.5vw;
+    align-self: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20vh;
+    height: 35px;
+    filter: invert(0);
+    transition: all .4s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    animation: pulse-horizontal 1s infinite;
+}
+
+@keyframes pulse-horizontal {
+    0% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
+.carousel-indicators li {
+    background-color: #FFD700;
+}
+
+.carousel-indicators .active {
+    background-color: #00FF00;
+}
+
+.btn {
+    font-weight: bold;
+}
+
+.btnPlay {
+    background: #1F2937;
+    color: #FFD700;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    transition: all .4s ease;
+    cursor: pointer;
+    padding: 10px 20px;
+    align-self: center;
+}
+
+    .btnPlay:hover {
+        background-color: #253947;
+        box-shadow: 0px 0px 10px #00FF00;
+        -webkit-animation: pulse 1s infinite;
+    }
+
+.text-center {
+    padding: 3vh;
+}
+
+    .text-center a {
+        background: #1F2937;
+        color: #FFD700;
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        transition: all .4s ease;
+        cursor: pointer;
+        padding: 3vh 6vh;
+        margin-top: 6vh;
+    }
+
+        .text-center a:hover {
+            background-color: #253947;
+            box-shadow: 0px 0px 10px #00FF00;
+            -webkit-animation: pulse 1s infinite;
+        }
+
+h1, h2, p {
+    color: #FFD700;
+}
+
+h2 {
+    margin-top: 3vh;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 5px #00FF00;
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 20px #00ff00, 0 0 30px #00FF00;
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 5px #00FF00;
+    }
+}
+
+hr {
+    border-top: 1px solid #FFD700;
+}
+
+.game-overview-item {
+    border-left: 1px solid #FFD700; /* Golden border */
+    text-align: center;
+    margin-top: 3vh;
+}
+
+    .game-overview-item:first-child {
+        border-left: none; /* Remove the border from the first item */
+    }
+
+.overview-container {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+    .carousel-item .contact-info div {
+        margin: 10px 0;
+        margin-top: 6vh;
+    }
+
+    .carousel-item .contact-info a {
+        color: #FFD700;
+        transition: color 0.3s ease;
+    }
+
+        .carousel-item .contact-info a:hover {
+            color: #00FF00;
+        }
+
+.how-to-play {
+    padding: 3vh;
+}
+
+    .how-to-play p {
+        color: white;
+        margin-top: 8vh;
+    }
+
+    .how-to-play h2{
+        text-align: center;
+    }
+
+.game-overview h2 {
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.game-overview h3 {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.image-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.smaller-image {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 10vh;
+}
+
+.smaller-image {
+    width: 75%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 10vh;
+    border: 3px solid #00FF00;
+    box-shadow: 0px 0px 30px #00FF00; /* Neon green glow */
+    transition: box-shadow .4s ease; /* Smooth transition for the glow */
+}
+
+    .smaller-image:hover {
+        border: 3px solid #FFD700;
+        box-shadow: 0px 0px 30px #FFD700; /* Gold glow on hover */
+    }

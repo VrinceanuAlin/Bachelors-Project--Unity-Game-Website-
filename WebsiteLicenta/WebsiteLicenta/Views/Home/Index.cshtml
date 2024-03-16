@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<div class="containerCarousel h-100 d-flex align-items-center justify-content-center">
+    <div id="carouselExampleIndicators" class="carousel slide w-100" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+                <div class="intro">
+                    <h1 class="display-4">This is Stellar Strike!</h1>
+                    <a href="/Game" id="btnPlay" class="btn btn-primary btn-lg">Play Now!</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="game-overview">
+                    <h2>Game Overview</h2>
+                    <div class="row">
+                        <div class="col-4 game-overview-item text-center">
+                            <h3>1. Destroy all the enemies</h3>
+                            <i class="fas fa-skull fa-3x text-warning"></i>
+                        </div>
+                        <div class="col-4 game-overview-item text-center">
+                            <h3>2. Get as many points as possible</h3>
+                            <i class="fas fa-star fa-3x text-warning"></i>
+                        </div>
+                        <div class="col-4 game-overview-item text-center">
+                            <h3>3. Check the Leaderboard</h3>
+                            <i class="fas fa-trophy fa-3x text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="how-to-play">
+                    <h2>How to Play</h2>
+                    <p class="instructions">
+                        Welcome to Stellar Strike! <i class="fas fa-rocket"></i>
+                        The goal of this game is to pilot your spaceship and take down as many enemy ships as possible.
+                        You control your spaceship with your mouse <i class="fas fa-mouse"></i>, moving the cursor to guide the ship through the stellar battlefield.
+                        To shoot at enemy vessels, simply click your left mouse button. <i class="fas fa-bullseye"></i>
+                        Remember, each enemy ship you destroy earns you points. Your goal is to accumulate as many points as possible to secure a top spot on the leaderboard.
+                        Now, gear up, pilot, and take your place in the stars! <i class="fas fa-star"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="how-to-play">
+                    <h2>Game Screenshots</h2>
+                    <div class="row">
+                        <div class="col-md-4 image-center">
+                            <img src="~/S1.png" class="img-fluid smaller-image" alt="Game Screenshot">
+                        </div>
+                        <div class="col-md-4 image-center">
+                            <img src="~/S2.png" class="img-fluid smaller-image" alt="Game Screenshot">
+                        </div>
+                        <div class="col-md-4 image-center">
+                            <img src="~/S3.png" class="img-fluid smaller-image" alt="Game Screenshot">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div>
+                        <i class="fas fa-envelope fa-lg"></i> <a href="mailto:vrinceanualin20@stud.ase.ro">vrinceanualin20@stud.ase.ro</a>
+                    </div>
+                    <div>
+                        <i class="fab fa-instagram fa-lg"></i> <a href="https://www.instagram.com/alinvladut20/" target="_blank">alinvladut20</a>
+                    </div>
+                    <div>
+                        <i class="fab fa-linkedin fa-lg"></i> <a href="https://www.linkedin.com/in/alin-v-v" target="_blank">alin-v-v</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>

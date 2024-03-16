@@ -1,0 +1,13 @@
+﻿@page
+@model DownloadPersonalDataModel
+@{
+    ViewData["Title"] = "Download Your Data";
+    ViewData["ActivePage"] = ManageNavPages.PersonalData;
+}
+<link rel="stylesheet" href="~/css/register.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+<h3>@ViewData["Title"]</h3>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
